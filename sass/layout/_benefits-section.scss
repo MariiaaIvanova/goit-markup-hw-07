@@ -1,0 +1,63 @@
+.benefits-section__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+.benefits-section__description {
+    flex-basis: calc((100% - 90px) / 4);
+    
+     &:nth-child(4n) {
+    margin-right: 0;
+    }
+     &::before {
+    content: "";
+    display: block;
+    height: 120px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $bcg-secondary-color;
+    }
+}
+
+.benefits-section__description.icon-antenna::before {
+    background-image: url("../css/images/antenna.svg");
+    margin-bottom: 30px;
+
+}
+
+.benefits-section__description.icon-clock::before {
+    background-image: url("../css/images/clock.svg");
+    margin-bottom: 30px;
+}
+
+.benefits-section__description.icon-diagram::before {
+    background-image: url("../css/images/diagram.svg");
+    margin-bottom: 30px;
+}
+
+.benefits-section__description.icon-astronaut::before {
+    background-image: url("../css/images/astronaut.svg");
+    margin-bottom: 30px;
+}
+
+.benefits-section__title {
+
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $primery-text-color;
+}
+
+.benefits-section__text {
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    color: $secondary-text-color;
+}

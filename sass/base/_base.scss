@@ -1,0 +1,52 @@
+html {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.link {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    font-family: $main-font;
+    background-color: var(--bcg-primery-color);
+    color: $primery-text-color;
+
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+
+}

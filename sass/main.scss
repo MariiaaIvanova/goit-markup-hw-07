@@ -1,0 +1,23 @@
+//BASE
+@import "./base/variables";
+@import "./base/base";
+
+//UTILS
+@import "./utils/visually-hidden";
+
+//COMPONENTS
+@import "./components/logo";
+@import "./components/button";
+@import "./components/backdrop";
+
+//LAYOUT(Studio styles)
+@import "./layout/header";
+@import "./layout/main-section-studio";
+@import "./layout/benefits-section";
+@import "./layout/activity-section";
+@import "./layout/team-section";
+@import "./layout/customers-section";
+@import "./layout/footer";
+
+
+
