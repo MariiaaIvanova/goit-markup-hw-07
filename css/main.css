@@ -152,10 +152,20 @@ body {
   top: 8px;
   right: 8px;
   cursor: pointer;
-  fill: #000000;
+  color: #000000;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop__action:hover {
-  fill: #2196F3;
+  color: #2196F3;
+}
+
+.backdrop__icon-close {
+  fill: currentColor;
 }
 
 .modal__form {
@@ -182,16 +192,19 @@ body {
   outline-style: none;
   color: #000000;
   font-size: 16px;
-}
-
-.modal__input {
   margin-bottom: 0;
+  -webkit-transition-property: border-color;
+  transition-property: border-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__input:focus {
   border-color: #2196F3;
 }
 .modal__input:focus + .modal__icon {
-  fill: #2196F3;
+  color: #2196F3;
 }
 
 .modal__wrapper {
@@ -211,7 +224,16 @@ body {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  fill: #212121;
+  fill: currentColor;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__icon:focus {
+  color: #2196F3;
 }
 
 .modal__button {
@@ -322,6 +344,12 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__check-mark {
@@ -330,6 +358,12 @@ body {
 
 .check-line input:checked + .modal__checkbox-agree .modal__mark {
   background-color: #2196F3;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
 }
 
@@ -913,6 +947,12 @@ footer {
   outline: none;
   padding-left: 16px;
   margin-right: 12px;
+  -webkit-transition-property: border-color;
+  transition-property: border-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .sign-up-form__input:focus {
   border-color: #2196F3;
